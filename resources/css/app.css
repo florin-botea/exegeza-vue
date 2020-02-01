@@ -1,0 +1,186 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/*---app_color_schema_config---*/
+.navbar-color-schema {
+	
+}
+
+.app-background {
+	@apply bg-gray-300;
+}
+
+.section {
+	@apply border;
+	@apply border-gray-600;
+	@apply shadow-xl;
+}
+
+.form {
+	@apply border;
+	@apply border-gray-600;
+	@apply shadow-xl;
+}
+
+.bible_form {
+	@apply bg-white;
+}
+
+.book_form {
+	@apply bg-white;
+}
+
+.chapter_form {
+	@apply bg-white;
+}
+
+.verse_form {
+	@apply bg-white;
+}
+
+.search_section {
+	@apply bg-white;
+}
+
+.breadcrumb_section {
+	@apply bg-white;
+}
+
+.books_section {
+	@apply bg-white;
+}
+
+.verses_section {
+	@apply bg-white;
+}
+
+.user_profile_section {
+	@apply bg-white;
+}
+
+.user_posts_section {
+	@apply bg-white;
+}
+
+.suggestions_section {
+	@apply bg-white;
+}
+
+.chapters_nav {
+	@apply bg-white;
+}
+
+.chapters_nav_item {
+	@apply font-semibold;
+}
+
+.chapters_nav_item--active {
+	@apply font-semibold bg-yellow-400;
+}
+
+.comment {
+	@apply bg-white text-sm border border-gray-600;
+}
+
+.reply {
+	@apply bg-white text-xs;
+}
+
+.menu {
+	@apply bg-white border border-gray-400 shadow-xl;
+}
+
+.notificationsLayer {
+	@apply bg-gray-100 border border-gray-500 shadow-xl font-normal text-black;
+}
+
+.replies-color-schema {
+	@apply bg-white;
+}
+/*---end---*/
+
+.error-popper:hover .invalid-message{
+	display:block;
+}
+.invalid-message {
+	display:none;
+}
+
+.adminInput {
+	@apply w-full;
+	@apply border;
+	@apply border-gray-600;
+	@apply rounded;
+	@apply p-0;
+}
+.adminAddBtn {
+	@apply bg-gray-900;
+	@apply text-white;
+	@apply font-bold;
+	@apply px-3;
+	@apply py-0;
+	@apply rounded;
+	@apply cursor-pointer;
+}
+.adminDeleteBtn {
+	@apply bg-red-700;
+	@apply text-white;
+	@apply font-bold;
+	@apply px-3;
+	@apply py-0;
+	@apply rounded;
+	@apply cursor-pointer;
+}
+.adminUpdateBtn {
+	@apply bg-green-700;
+	@apply text-white;
+	@apply font-bold;
+	@apply px-3;
+	@apply py-0;
+	@apply rounded;
+	@apply cursor-pointer;
+}
+
+.new-loaded, .focused {
+	animation-name: loose_focus;
+	animation-duration: 6s;
+}
+
+@keyframes loose_focus {
+	from {background-color: #ffeb99;}
+	to {background-color: #fff5cc;}
+}
+
+.hover\:next-hidden-show:hover + .hidden{
+	display:block;
+}
+
+.hover\:nested-hidden-show:hover > .hidden{
+	display:block;
+}
+
+.form-control {
+	@apply flex-1;
+	@apply shadow;
+	@apply appearance-none;
+	@apply border;
+	@apply rounded;
+	@apply leading-tight;
+	@apply border-gray-500;
+	@apply w-full;
+}
+
+.row {
+	@apply flex;
+}
+
+@media (max-width: 640px){
+	
+	.noScrollOnMobile {
+		overflow:hidden;
+	}
+
+}

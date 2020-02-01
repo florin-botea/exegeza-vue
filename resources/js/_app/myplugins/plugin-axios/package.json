@@ -1,0 +1,81 @@
+{
+  "_from": "@vuex-orm/plugin-axios",
+  "_id": "@vuex-orm/plugin-axios@0.5.0",
+  "_inBundle": false,
+  "_integrity": "sha512-ifWypr+cCSnQO+RgNBeqfILEoj2eGlLqRxKOPSHnY89r6P+9gL8qhCSlTrt7AFRGSdnoQ6DdAMXum3Th0kUWvw==",
+  "_location": "/@vuex-orm/plugin-axios",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@vuex-orm/plugin-axios",
+    "name": "@vuex-orm/plugin-axios",
+    "escapedName": "@vuex-orm%2fplugin-axios",
+    "scope": "@vuex-orm",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@vuex-orm/plugin-axios/-/plugin-axios-0.5.0.tgz",
+  "_shasum": "8af763b2c8e9ac2f210d6e7d1011d58d5c6b6108",
+  "_spec": "@vuex-orm/plugin-axios",
+  "_where": "C:\\Users\\pc\\Desktop\\exegeza",
+  "author": {
+    "name": "Kani Robinson"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vuex-orm/core": "^0.31.6",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.11"
+  },
+  "deprecated": false,
+  "description": "Vuex-ORM Plugin to sync the data against a RESTful API.",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.22.0",
+    "jest": "^23.5.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "keywords": [
+    "vue",
+    "vuex",
+    "vuex-plugin",
+    "vuex-orm",
+    "vuex-orm-plugin",
+    "axios",
+    "http"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "name": "@vuex-orm/plugin-axios",
+  "repository": {
+    "type": "git+https://github.com/vuex-orm/plugin-axios.git"
+  },
+  "scripts": {
+    "build": "webpack --mode=production",
+    "lint": "eslint src/**/*.js test/**/*.js",
+    "test": "jest",
+    "watch": "webpack --watch --mode=production"
+  },
+  "version": "0.5.0"
+}

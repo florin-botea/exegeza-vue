@@ -1,0 +1,271 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~noty/src/noty.scss";
+@import "~noty/src/themes/mint.scss";
+
+body {
+	overflow-x: hidden;
+}
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+.websiteLogo {
+	height:45px;
+	width:100px;
+	border: 1px solid white;
+	background-image: url("/logo.jpg");
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.btn-khaki {
+	background-color: #FFFFDD;
+	border: 1px solid grey;
+}
+
+.btn-khaki:hover {
+	background-color: khaki;
+}
+
+.bg-greenyellow {
+	background-color: GreenYellow 
+}
+
+.shake {
+	-webkit-animation: shake 0.5s linear infinite;
+}
+@-webkit-keyframes shake {
+	25% { -webkit-transform: rotate(2deg); }
+	50% { -webkit-transform: rotate(0deg); }
+	75% { -webkit-transform: rotate(-2deg); }
+	100% { -webkit-transform: rotate(0deg); }
+}
+pre {
+	white-space: pre-wrap;       /* Since CSS 2.1 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+
+
+.post_item--content-collapsed > .post_item__content, .post_item--content-collapsed .post_item__actions{
+	display: none !important;
+}
+.post_item__actions {
+	z-index: 20;
+}
+
+.transpa-click {
+	pointer-events: none;
+}
+
+.list-group-item{
+	z-index:3;
+}
+.list-group-item-action{
+	z-index:4;
+}
+
+.notifications-container{
+	height:auto;
+	max-height:100%;
+	width:100%;
+	z-index:100;
+	overflow-y:auto;
+	border-bottom:1px solid grey;
+	margin:0px;
+}
+.notifications-dropdown{
+	z-index:100;
+	padding:0px;
+	min-height:400px;
+	position:absolute; 
+	width:350px;/*vw*/
+	right:10px;/*0*/
+	bottom:100px;/*0px*/
+	top:50px;
+	background-color:rgba(44,23,12,0.2);
+}
+.dropdown-menu-right {
+	position:relative !important;
+	float:right !important;
+}
+.navbar-panel-layer {
+	height:auto;
+	position: relative;
+	top: -34px;
+	border: 1px solid black;
+	float: right;
+	color: black;
+	background-color: white;
+	font-size: 14px;
+}
+.fas-i-center {
+	text-align: center;
+}
+.fas-i-center .fas {  
+	display: inline-block;
+    width: 100%;
+}
+.notificationListContainer {
+	position:relative;
+	height:0px;
+	width:0px;
+	float:right;
+}
+.navbar_dropdown{
+	top:70px;
+	overflow-y:scroll;
+}
+@media only screen and (max-width: 576px) {
+	.sm_expandFullscreen {
+		position: fixed !important;
+		width: 100vw !important;
+		bottom:0;
+		left: 0px !important;
+	}
+	.notificationListContainer {
+		position:initial;
+	}
+	.sm_positionInitial{
+		position:initial;
+	}
+}
+.loadDownBtn {
+	border-radius: 0px 0px 50% 50%;
+	width:100%;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0px;
+	border-bottom: 1px solid grey;
+}
+.loadUpBtn {
+	border-radius: 50% 50% 0px 0px;
+	width:100%;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 0px;
+	border-bottom: 1px solid grey;
+}
+.bg-lightgrey {
+	background-color: lightgray !important;
+}
+.suggestion {
+	font-size: 16px;
+	border-bottom: 1px solid grey;
+}
+.suggestion:hover {
+	background-color: lightgray !important;
+}
+.notificationItem:hover {
+	background-color: #ffff99;
+}
+.notificationItem_deleteBtn:hover {
+	color: red;
+}
+.notificationItem_readBtn:hover {
+	color:blue;
+}
+.notificationsBell {
+	font-size:20px;
+	color: white;
+	display: inline-block;
+	width:100%;
+}
+.commentAddBtn {
+	padding-y: 0px;
+	border-radius: 0px 0px 0px 27%;
+	font-size: 12px;
+}
+.replyAddBtn {
+	padding-y: 0px;
+	border-radius: 0px 0px 27% 0px;
+	font-size: 12px;
+	float: right;
+}
+.searchSection {
+	background-color: #ffff99;
+	border-right: 1px solid grey;
+	border-top: 1px solid grey;
+}
+.logoutBtn {
+	
+}
+.biblesAndBooksSection{
+	
+}
+.bg-cornsilk {
+	background-color: #FFF8DC;
+}
+.replyItem {
+	border-left: 2px solid grey;
+}
+
+@media screen and (max-width: 576px) {
+	#theCommentsSection {
+		position: absolute;
+		z-index: 70;
+		overflow: hidden;
+		width:0%;
+		right: 0px;
+	}
+	.commentSectionShown {
+		animation-fill-mode: forwards;
+		animation-name: slideIntoView--fromRight;
+		animation-duration: 0.5s;
+	}
+	
+	.commentSectionHide {
+		animation-fill-mode: forwards;
+		animation-name: slideOutOfView--toRight;
+		animation-duration: 0.5s;
+	}
+	
+	.commentItem {
+		min-width: 100vw;
+	}
+	
+	.commentSectionShowBtn {
+		display:block !important;
+		z-index:10;
+	}
+	.yCollapseOnMobile {
+		height: 0px !important;
+		overflow:hidden;
+	}
+}
+
+.commentSectionShowBtn {
+	display:none;
+	position:fixed;
+	right: 25px;
+	bottom: 40px;
+	font-size: 45px;
+	z-index:80;
+}
+
+@keyframes slideIntoView--fromRight {
+	from{width:0%;}
+	to 	{width:100%;}
+}
+
+@keyframes slideOutOfView--toRight {
+	from{width:100%;}
+	to	{width:0%;}
+}
+.centerBlock {
+  display: table;
+  margin: auto;
+}
